@@ -1,0 +1,26 @@
+cloud_pct
+temp
+feels_like
+humidity
+min_temp
+max_temp
+wind_speed
+wind_degrees
+sunrise
+sunset
+
+city,Country,Latitude,Longitude
+
+tokyo_Japan = 35.6897,139.6922
+new-York-City_USA = 40.7128,-74.0060
+london_UK = 51.5074,-0.1278
+paris_France = 48.8566,2.3522
+mumbai_India = 19.0760,72.8777
+sydney_Australia = -33.8688,151.2093
+cairo_Egypt = 30.0444,31.2357
+são-Paulo_Brazil = -23.5505,-46.6333
+mexico-City_Mexico = 19.4326,-99.1332
+dubai_UAE = 25.2048,55.2708
+sylhet_Bangladesh = 24.8949,91.8687
+papum-pare_India = 27.1500,93.7500
+

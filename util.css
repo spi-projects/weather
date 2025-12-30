@@ -1,0 +1,45 @@
+.lovely{
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-weight: 400;
+}
+
+.acnt{
+    color: #F19953;
+}
+
+.sec{
+    color: #8DAA9D;
+}
+
+.bg {
+     background-color: #0F0E0E;
+}
+.sec-bg{
+    background-color: #1A1A1A;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.data-txt{
+    font-size: clamp(1.5rem, 1.071rem + 0.952vw, 2.5rem);
+    color: #F19953;
+    font-weight: 500;
+     font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.data-num{
+    font-size: clamp(2rem, 1.464rem + 1.429vw, 3rem);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.sel-tex{
+    font-size: clamp(0.6rem, 0.171rem + 1.143vw, 1.2rem);
+    margin-bottom: 5px;
+    
+}
+

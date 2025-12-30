@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARE WEATHER</title>
+    <link rel="icon" href="main-icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+</head>
+<body class="bg ">
+    <div class="dim" id="dimer">
+        <div class="loader" id="loader"></div>
+        <div class="dimtxt">💝- HE REALLY LOVES YOU -💝</div>
+    </div>
+    <h1 id="head">Care Weather Checker</h1>
+    <div class="container">
+        <div class="box1">
+            <h2 class="lovely text-center sec">💖- Your Place -💖</h2>
+            <h4 class="sel-tex">Select City</h4>
+            <select name="" id="your-city" class="drop-down">
+                <!-- Options will be populated by script.js -->
+            </select>
+            <div><p class="data-txt" id="temp">Temperature</p></div>
+            <div><p class="data-txt" id="humidity">Humidity</p></div>
+            <div><p class="data-txt" id="feels_like">Feels Like</p></div>
+            <div><p class="data-txt" id="sunrise">Sunrise</p></div>
+            <div><p class="data-txt" id="sunset">Sunset</p></div>
+        </div>
+        <div class="box2">
+            <h2 class="lovely text-center sec">💖- Janna's place -💖</h2>
+            <h4 class="sel-tex">Select City</h4>
+            <select name="" id="jan-city" class="drop-down">
+            </select>
+            <div><p class="data-txt" id="tempLove">Temperature</p></div>
+            <div><p class="data-txt" id="humidityLove">Humidity</p></div>
+            <div><p class="data-txt" id="feels_likeLove">Feels Like</p></div>
+            <div><p class="data-txt" id="sunriseLove">Sunrise</p></div>
+            <div><p class="data-txt" id="sunsetLove">Sunset</p></div>
+        </div>
+    </div>
+    <button id="go-button">Go On Lover </button>
+    <script src="util.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

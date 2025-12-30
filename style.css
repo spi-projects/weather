@@ -1,0 +1,178 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: conic-gradient(from -90deg,#ffffff 90deg,#212121ab 0);
+  background: var(--c), var(--c);
+  background-size: 40% 40%;
+  animation: l20 1.5s infinite;
+  /* position: fixed;
+    top: 50%;
+    left: 43%; */
+    z-index: 900;
+    display: block;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+@keyframes l20 {
+ 0%,
+ 20%  {background-position: 0 0           ,0            calc(100%/3)}
+ 33%  {background-position: 0 0           ,calc(100%/3) calc(100%/3)}
+ 66%  {background-position: 0 calc(100%/3),calc(100%/3) 0  }
+ 80%,
+ 100% {background-position: 0 calc(100%/3),0            0  }
+}
+.dimtxt{
+    color: white;
+    font-size: clamp(1.2rem, 1.071rem + 0.852vw, 2.2rem);
+    margin-bottom: 20px;
+    display: block;
+}
+.dim{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 800;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    /* background-color: #0F0E0E; */
+    padding: max(5%, 20px);
+    height: 100dvh;
+}
+#head{
+    text-align: center;
+    font-size: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+    color: #F19953;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /* margin-bottom: 20px; */
+    height: 15dvh;
+    line-height: 15dvh;
+    /* overflow: hidden; */
+}
+
+.container{
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: clamp(20px, 2.143rem + 1.429vw, 40px); */
+    flex-wrap: wrap;
+    padding: clamp(10px, 1.071rem + 0.714vw, 20px);
+    background-color: #302f2f8e;
+    border-radius: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem) ;
+    /* border-radius: 10px; */
+    height: 70%;
+    box-shadow: 5px 10px 20px #f43d3d4e;
+}
+.box2 , .box1{
+    /* border: 1px solid white; */
+    border-radius: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem) ;
+    /* padding: clamp(10px, 1.071rem + 0.714vw, 20px); */
+    /* width : 80%; */
+    padding: 10px;
+    /* padding-bottom: 0px; */
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    ;
+    background-color: #59595994;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        
+    inset 0 0 10px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px); 
+    height: 45%;
+    overflow: hidden;
+    
+}
+
+
+.drop-down{
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: clamp(1rem, 0.893rem + 0.357vw, 1.5rem);
+    padding: clamp(5px, 0.536rem + 0.357vw, 10px);
+    background-color: #dc2b2b;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    /* height: clamp(12.5rem, 3.571rem + 23.81vw, 25rem); */
+}
+
+.drop-down option{
+    background-color: #3d3d3d;
+    color: white;
+    outline: none;
+    
+}
+
+/* Standard styles for everyone go here */
+/* .weather-card {
+    width: 100%; 
+    background-color: white;
+} */
+
+/* THE MEDIA QUERY */
+#go-button{
+    position: fixed;
+    bottom: 10px;
+    left: 2.5vw;
+    height: 6dvh;
+    width: 95vw;
+    background-color: #7B0828;
+    color: white;
+    font-family: 'Love Ya Like A Sister', cursive;
+    border-radius: 5px;
+    border: none;
+    font-size: clamp(1.625rem, 0.643rem + 2.619vw, 3rem);
+    z-index: 1000;
+}
+@media (max-width: 600px){
+    .container{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    
+}
+@media (min-width: 601px){
+    #go-button{
+        height: 10vh;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+    .box1, .box2{
+        width: 45%;
+        height: auto;
+    }
+}
+
